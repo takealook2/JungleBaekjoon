@@ -5,7 +5,6 @@ queenNum = int(input())
 
 chess = [-1]*queenNum
 
-# 체스판 생성(이제 체스판의 row, col)
 # 퀸이 chess[0,0]에 들어가고
     # row, col, diagonal 조건이 참
         # 조건이 참일 때 퀸이 해당 위치에 들어서고(있으면 True 없으면 False)
@@ -20,9 +19,7 @@ chess = [-1]*queenNum
 # 근데 여러 개의 조건이 겹치는 건 어떻게 해야하는 건지 모르겠다
 
 
-for i in range(queenNum):
-    for j in range(queenNum):
-        if 
+
 
 
 
