@@ -26,5 +26,5 @@ find_subsequences(0, 0)
 if S == 0:
     count -= 1
 
-# 결과 출력
+# 결과 출력 
 print(count)
