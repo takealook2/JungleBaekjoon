@@ -1,11 +1,3 @@
-# isPromising 함수를 통해 다음 퀸을 놓을 수 있을지 없는지를 탐색함
-def isPromising(row, col, chess):
-    # row 이전에 놓인 퀸들과 비교하여 같은 열에 있거나 대각선에 있는지 확인
-    for i in range(row):
-        if chess[i] == col or abs(chess[i] - col) == abs(i - row):
-            return False  # 같은 열 또는 대각선에 있으면 False를 반환하여 퀸을 놓을 수 없음을 알림
-    return True  # 퀸을 놓을 수 있으면 True 반환
-
 # 퀸을 놓는 함수
 def placeQueen(row, N, chess, solution_cnt, cols, left_diags, right_diags):
     # N개의 퀸을 모두 놓았을 때 가능한 경우의 수 증가

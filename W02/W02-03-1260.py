@@ -35,12 +35,11 @@ for i in range(M):
     arr[v1].append(v2)
     arr[v2].append(v1)
 
-# for i in range(1, N + 1):
-#     arr[i].sort()
+for i in range(1, N + 1):
+    arr[i].sort()
 
-print(arr)
-# dfs(V, arr)
-# print()
+dfs(V, arr)
+print()
 
-# visited = [False]*(N+1)
-# bfs(V, arr)
+visited = [False]*(N+1)
+bfs(V, arr)

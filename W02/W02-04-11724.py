@@ -1,4 +1,5 @@
 import sys
+sys.setrecursionlimit(10**9)
 
 # dfs 실행하는 부분
 def dfs(V, arr):

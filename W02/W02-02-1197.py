@@ -1,12 +1,13 @@
 import sys
-sys.setrecursionlimit(10**6)  # 재귀 호출 한도를 늘림
+sys.setrecursionlimit(10**6)
 
 def find(x):
     global parent
-    if parent[x] != x:
-        parent[x] = find(parent[x])  # 경로 압축
-    return parent[x]
-
+    if parent[x] == x:
+        return x
+    else:
+        return find(parent[x])
+    
 def union(x, y):
     pX, pY = find(x), find(y)
     if pX > pY:
@@ -15,7 +16,7 @@ def union(x, y):
         parent[pY] = pX
 
 V, E = map(int, sys.stdin.readline().split())
-arr, parent = [], [i for i in range(V)]  # 초기에는 자기 자신을 부모로 설정
+arr, parent = [], [i for i in range(V)] # 파이썬 리스트 컴프리헨션
 
 for _ in range(E):
     v1, v2, dist = map(int, sys.stdin.readline().split())
